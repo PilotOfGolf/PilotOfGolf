@@ -10,12 +10,12 @@
 }
 
 :root[data-theme="dark"] {
-  --background: #0f172a;
-  --surface: #111827;
-  --text: #f3f4f6;
-  --accent: #7dd3fc;
-  --accent-dark: #38bdf8;
-  --border: #334155;
+  --background: #121417;
+  --surface: #1c1f24;
+  --text: #f2f2f2;
+  --accent: #b0b7c2;
+  --accent-dark: #8c94a3;
+  --border: #3a4048;
 }
 
 *,
