@@ -231,6 +231,43 @@ main {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
 }
 
+.experience-item + .experience-item {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.experience-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.experience-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.experience-location {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.experience-dates {
+  margin: 0;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: right;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -303,5 +340,15 @@ a:focus-visible {
 
   .intro-banner {
     padding-top: 2.5rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-dates {
+    text-align: left;
+    margin-top: 0.25rem;
   }
 }
