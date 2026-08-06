@@ -83,17 +83,17 @@ main {
   gap: 1rem;
 }
 
-.header-row {
+.header-bar {
   position: relative;
 }
 
-.header-actions {
+.header-controls {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-.menu-toggle {
+.nav-toggle {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +108,7 @@ main {
   padding: 0.5rem;
 }
 
-.menu-toggle span {
+.nav-toggle span {
   display: block;
   width: 100%;
   height: 2px;
@@ -116,7 +116,7 @@ main {
   border-radius: 999px;
 }
 
-.theme-toggle {
+.theme-switch {
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
@@ -127,18 +127,18 @@ main {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.theme-toggle:hover,
-.theme-toggle:focus-visible {
+.theme-switch:hover,
+.theme-switch:focus-visible {
   border-color: var(--accent);
   outline: none;
 }
 
-.site-title {
+.site-brand {
   margin: 0;
   font-size: 1.4rem;
 }
 
-.site-title a {
+.site-brand a {
   text-decoration: none;
   color: inherit;
 }
@@ -147,7 +147,7 @@ main {
   display: block;
 }
 
-.nav-list {
+.nav-links {
   display: flex;
   gap: 1.25rem;
   list-style: none;
@@ -156,45 +156,79 @@ main {
   flex-wrap: wrap;
 }
 
-.nav-list a {
+.nav-link {
   text-decoration: none;
   color: inherit;
   padding: 0.2rem 0;
   transition: color 0.2s ease;
 }
 
-.nav-list a:hover,
-.nav-list a:focus-visible {
+.nav-link:hover,
+.nav-link:focus-visible {
   color: var(--accent);
 }
 
-.nav-list a:focus-visible {
+.nav-link:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-.active {
+.nav-link.is-active {
   font-weight: 700;
   color: var(--accent);
 }
 
-.hero {
+.page-content {
+  padding-bottom: 2rem;
+}
+
+.intro-banner {
   padding: 4rem 0 3rem;
 }
 
-.hero h2 {
+.intro-banner h2 {
   font-size: clamp(1.75rem, 3vw, 2.4rem);
   margin-bottom: 1rem;
 }
 
-.hero p {
+.lead {
   max-width: 70ch;
   margin: 0;
 }
 
-section {
+.page-section {
   padding-bottom: 2.5rem;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.section-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.feature-list {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.content-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
 }
 
 h1,
@@ -207,14 +241,6 @@ h3 {
 h2 {
   margin-top: 0;
   margin-bottom: 0.75rem;
-}
-
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
 }
 
 footer {
@@ -245,17 +271,17 @@ a:focus-visible {
     padding: 1rem 0;
   }
 
-  .header-row {
+  .header-bar {
     width: 100%;
   }
 
-  .header-actions {
+  .header-controls {
     position: absolute;
     top: 0.1rem;
     right: 0;
   }
 
-  .menu-toggle {
+  .nav-toggle {
     display: flex;
   }
 
@@ -269,13 +295,13 @@ a:focus-visible {
     display: block;
   }
 
-  .nav-list {
+  .nav-links {
     flex-direction: column;
     gap: 0.75rem;
     padding: 0.75rem 0 0;
   }
 
-  .hero {
+  .intro-banner {
     padding-top: 2.5rem;
   }
 }

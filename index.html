@@ -10,77 +10,84 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
 
-  <body>
+  <body class="site-body">
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="site-header">
-      <div class="container header-row">
-        <h1 class="site-title">
+      <div class="container header-bar">
+        <h1 class="site-brand">
           <a href="/">Aiden Paul</a>
         </h1>
 
-        <div class="header-actions">
-          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <div class="header-controls">
+          <button class="nav-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
           </button>
 
-          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <button class="theme-switch" type="button" data-theme-toggle aria-label="Toggle color theme">
             Dark mode
           </button>
         </div>
 
         <nav id="primary-nav" class="site-nav" aria-label="Primary">
-          <ul class="nav-list">
-            <li><a class="active" href="/">Home</a></li>
-            <li><a href="/research/">Research</a></li>
-            <li><a href="/projects/">Projects</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/resume">Résumé</a></li>
-            <li><a href="/connect">Connect</a></li>
+          <ul class="nav-links">
+            <li><a class="nav-link is-active" href="/">Home</a></li>
+            <li><a class="nav-link" href="/research/">Research</a></li>
+            <li><a class="nav-link" href="/projects/">Projects</a></li>
+            <li><a class="nav-link" href="/blog/">Blog</a></li>
+            <li><a class="nav-link" href="/resume">Résumé</a></li>
+            <li><a class="nav-link" href="/connect">Connect</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main id="main-content">
-      <section class="hero container" aria-labelledby="hero-heading">
-        <h2 id="hero-heading">Electrical Engineering. Applied Physics. Nanotechnology. RF Systems. </h2>
-        <p>
-          I am passionate about exploring the intersection of EE and Physics. 
-        </p>
-      </section>
-
-      <section class="container" aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this paragraph with a
-          brief professional introduction. Keep it concise.
-        </p>
-        <p>
-          Focus on what you work on, what interests you, and what visitors can expect to find
-          here.
-        </p>
-      </section>
-
-      <section class="container" aria-labelledby="education-heading">
-        <h2 id="education-heading">Education</h2>
-        <div class="card">
-          <h3>Rochester Institute of Technology</h3>
-          <p>B.S. Electrical Engineering</p>
+    <main id="main-content" class="page-content">
+      <section class="intro-banner container" aria-labelledby="hero-heading">
+        <div class="stack">
+          <h2 id="hero-heading">Electrical Engineering. Applied Physics. Nanotechnology. RF Systems.</h2>
+          <p class="lead">
+            I am passionate about exploring the intersection of EE and Physics.
+          </p>
         </div>
       </section>
 
-      <section class="container" aria-labelledby="interests-heading">
-        <h2 id="interests-heading">Current Interests</h2>
-        <ul>
-          <li>Communications Systems</li>
-          <li>Signal Processing</li>
-          <li>Electronics</li>
-          <li>Embedded Hardware</li>
-          <li>Emergency Communications</li>
-        </ul>
+      <section class="page-section container" aria-labelledby="about-heading">
+        <div class="section-content">
+          <h2 id="about-heading" class="section-title">About</h2>
+          <p>
+            Hello! My name is Aiden and I am currently a student at the Rochester Institute of Technology studying Electrical Engineering.
+            I am interested in various areas of electrical engineering, including communications systems, signal processing, electronics, and RF engineering. I enjoy applying my skills to real-world problems that can help solve issues society is facing.
+          </p>
+          <p>
+            This website serves as a portfolio of my work, showcasing my academic journey, projects, and areas of interest in electrical engineering.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-section container" aria-labelledby="education-heading">
+        <div class="section-content">
+          <h2 id="education-heading" class="section-title">Education</h2>
+          <div class="content-card">
+            <h3>Rochester Institute of Technology</h3>
+            <p>B.S. Electrical Engineering</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section container" aria-labelledby="interests-heading">
+        <div class="section-content">
+          <h2 id="interests-heading" class="section-title">Current Interests</h2>
+          <ul class="feature-list">
+            <li>Communications Systems</li>
+            <li>Signal Processing</li>
+            <li>Electronics</li>
+            <li>Embedded Hardware</li>
+            <li>Emergency Communications</li>
+          </ul>
+        </div>
       </section>
     </main>
 
