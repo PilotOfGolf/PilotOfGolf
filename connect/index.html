@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Aiden Paul | Home</title>
+    <meta name="description" content="Aiden Paul's website homepage." />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="site-body">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-bar">
+        <h1 class="site-brand">
+          <a href="/">Aiden Paul</a>
+        </h1>
+
+        <div class="header-controls">
+          <button class="nav-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <button class="theme-switch" type="button" data-theme-toggle aria-label="Toggle color theme">
+            Dark mode
+          </button>
+        </div>
+
+        <nav id="primary-nav" class="site-nav" aria-label="Primary">
+          <ul class="nav-links">
+            <li><a class="nav-link is-active" href="/">Home</a></li>
+            <li><a class="nav-link" href="/research/">Research</a></li>
+            <li><a class="nav-link" href="/projects/">Projects</a></li>
+            <li><a class="nav-link" href="/blog/">Blog</a></li>
+            <li><a class="nav-link" href="/resume/">Résumé</a></li>
+            <li><a class="nav-link" href="/connect/">Connect</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-content">
+      <section class="page-section container" aria-labelledby="contact-heading">
+        <div class="section-content">
+          <h2 id="contact-heading" class="section-title">Connect</h2>
+
+          <div class="content-card contact-card">
+            <div class="contact-intro">
+              <p class="lead">Feel free to reach out about research, projects, or collaboration ideas.</p>
+            </div>
+
+            <ul class="contact-list">
+              <li>
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">linkedin.com/in/aiden-paul</a>
+              </li>
+              <li>
+                <strong>Phone</strong>
+                <span id="phone-number" class="contact-hidden">+1 (555) 123-4567</span>
+              </li>
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:aiden@example.com">aiden@example.com</a>
+              </li>
+            </ul>
+
+            <div class="contact-challenge" aria-label="Phone protection challenge">
+              <label for="phone-check">Solve to reveal the phone number: 7 + 5 =</label>
+              <input id="phone-check" type="text" inputmode="numeric" autocomplete="off" />
+              <button type="button" class="theme-switch" id="phone-reveal">Reveal</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2026 Aiden Paul</p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
