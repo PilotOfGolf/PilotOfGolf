@@ -234,6 +234,52 @@ main {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
 }
 
+.subsection-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.publication-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.publication-item {
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+.publication-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.publication-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.publication-year {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.publication-description {
+  margin: 0.35rem 0 0;
+}
+
 .experience-item + .experience-item {
   margin-top: 1rem;
   padding-top: 1rem;
@@ -354,5 +400,10 @@ a:focus-visible {
   .experience-dates {
     text-align: left;
     margin-top: 0.25rem;
+  }
+
+  .publication-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
