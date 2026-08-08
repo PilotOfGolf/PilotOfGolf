@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const phoneRevealButton = document.getElementById("phone-reveal");
   const phoneCheckInput = document.getElementById("phone-check");
   const phoneNumber = document.getElementById("phone-number");
+  const phonePrompt = document.getElementById("phone-prompt");
+  let correctAnswer = 0;
 
   const applyTheme = (theme) => {
     root.setAttribute("data-theme", theme);
@@ -37,14 +39,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  if (phoneRevealButton && phoneCheckInput && phoneNumber) {
+  const generatePhoneChallenge = () => {
+    const first = Math.floor(Math.random() * 10) + 1;
+    const second = Math.floor(Math.random() * 10) + 1;
+    correctAnswer = first + second;
+
+    if (phonePrompt) {
+      phonePrompt.textContent = `Solve to reveal the phone number: ${first} + ${second} =`;
+    }
+  };
+
+  generatePhoneChallenge();
+
+  if (phoneRevealButton && phoneCheckInput && phoneNumber && phonePrompt) {
     phoneRevealButton.addEventListener("click", () => {
-      if (phoneCheckInput.value.trim() === "12") {
+      if (phoneCheckInput.value.trim() === String(correctAnswer)) {
         phoneNumber.style.display = "inline";
         phoneCheckInput.value = "";
+        generatePhoneChallenge();
       } else {
         phoneCheckInput.value = "";
         phoneCheckInput.focus();
+        generatePhoneChallenge();
       }
     });
   }
