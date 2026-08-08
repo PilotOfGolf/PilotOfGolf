@@ -258,22 +258,36 @@ main {
 }
 
 .publication-header {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.publication-meta {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.82;
+  margin: 0;
+}
+
+.publication-journal,
+.publication-authors,
+.publication-date {
+  white-space: nowrap;
+}
+
+.publication-journal,
+.publication-date {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .publication-title {
   margin: 0;
   font-size: 1rem;
-}
-
-.publication-year {
-  margin: 0;
-  color: var(--accent);
-  font-weight: 600;
-  white-space: nowrap;
+  line-height: 1.4;
 }
 
 .publication-description {
@@ -406,8 +420,7 @@ a:focus-visible {
     margin-top: 0.25rem;
   }
 
-  .publication-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .publication-meta {
+    font-size: 0.85rem;
   }
 }
