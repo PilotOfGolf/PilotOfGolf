@@ -327,7 +327,11 @@ h3 {
 h2 {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  font-size: clamp(1.2rem, 1.6vw, 1.45rem);
+  font-size: clamp(1.15rem, 1.4vw, 1.3rem);
+}
+
+h3 {
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
 }
 
 footer {
